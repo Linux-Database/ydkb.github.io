@@ -150,7 +150,7 @@ https://ydkb.io/ を開き、左のメニュから **HHKB BLE もしく (HHKB BL
 
 <html><div class="hint">
 <subtitle>ヒント(HINT)</subtitle>
-<br>As mentioned above, the red light under the USB port on the left is the charging indicator. In addition, the green light below the USB on the right is equivalent to LED3.
+<!-- <br>As mentioned above, the red light under the USB port on the left is the charging indicator. In addition, the green light below the USB on the right is equivalent to LED3. -->
 <br>USBポートの下にある赤いライトは、充電中のインジケーターです。また、右側のUSBの下にある緑色のライトは、LED3と同義です。
 </div></html>
 
@@ -188,7 +188,7 @@ LEDMAPを変更したい場合は、[LEDMAP](en/features/ledmap) を参照して
   - これらの特性を利用し、インジケーターを反転させることができます。例えば、NumLockがオンの時にNumLockをオフにしたいとき、それをNumLockをオン(Numlockインジケーターがオフ)にした状態で押すことができます。これは電池消費量を少なくすることができます。
 </div>
 
-Besides LEDMAP setting, they have some other special functions.
+<!-- Besides LEDMAP setting, they have some other special functions. -->
 LEDMAP設定以外にも、他に特殊な機能があります。
 
 <table_w30x70>
@@ -202,6 +202,18 @@ LEDMAP設定以外にも、他に特殊な機能があります。
 | Press <key>LShift+RShift+s</key> | Indicate Bluetooth connection status as above |
 | Manually enter the Lock Mode | Three lights light up at the same time, and then turn off in the order of LED3 LED2 LED1 |
 | Wake from Level 2 Energy Saving or Lock Mode | Three lights light up at the same time, and then start to indicate Bluetooth connection status |
+| Low battery reminder | When using the keyboard, the three lights flash at the same time; when saving energy, do not flash. It can still be used for two or three days. |
+| Very low battery reminder | When using the keyboard, the three lights flash rapidly at the same time; no flash when saving energy. At this time, it is recommended to charge as soon as possible. |
+
+| 状態もしくは操作 | LEDインジケーター表示 |
+|:--- |:--- |
+| フラッシュモード (待機) | 三つインジケーターは同時に点灯もしくは交互に点滅、停止することはない |
+| フラッシュモード (書き込み中) | 待機モードをもとに、LED3は高速に点滅します |
+| 起動時にbluetoothは未接続の状態時 | LED3 が点滅, 接続がずっとない状態では 、15秒後に点滅が停止|
+| 起動時にbluetoothは接続の状態時 | LED2 と LED3 は同時に遅く点滅し、点滅の速度は非接続時より明らかに遅い |
+| <key>LShift+RShift+s</key> | Bluetooth接続状態は上記と同じく表示します |
+| 手動でLock Mode | 全LEDが点灯し、LED3 LED2 LED1順に消灯します |
+| レベル2のエコモードもしくはLock Modeから解除時 | 全LEDが同時に点灯し、それからbluetoothの接続状態表示に切り替わります |
 | Low battery reminder | When using the keyboard, the three lights flash at the same time; when saving energy, do not flash. It can still be used for two or three days. |
 | Very low battery reminder | When using the keyboard, the three lights flash rapidly at the same time; no flash when saving energy. At this time, it is recommended to charge as soon as possible. |
 
