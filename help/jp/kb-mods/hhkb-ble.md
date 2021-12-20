@@ -143,38 +143,53 @@ https://ydkb.io/ を開き、左のメニュから **HHKB BLE もしく (HHKB BL
 </div></html>
 
 
-## Indicators and Power Saving
+## lEDインジケーターと省エネルギー(Indicators and Power Saving)
 
-Common functions for indicators can be defined by [LEDMAP](en/features/ledmap) . The indicator lights only when the keyboard is working, not power saving. It is recommended not to set any indicators to a function that may keep it constantly on as that may increase the power consumption and significantly reduce the battery life.
+<!-- Common functions for indicators can be defined by [LEDMAP](en/features/ledmap) . The indicator lights only when the keyboard is working, not power saving. It is recommended not to set any indicators to a function that may keep it constantly on as that may increase the power consumption and significantly reduce the battery life. -->
+一般的な機能は、[LEDMAP](en/features/ledmap) によって定義できます。インジケーターは、キーボードが動作中のみ点灯します。省エネルギーのためには、常に点灯する設定を推奨しません。これは、電池消費量を大幅に増加させ、電池残量を大幅に減らす可能性があります。
 
 <html><div class="hint">
-<subtitle>HINT</subtitle>
+<subtitle>ヒント(HINT)</subtitle>
 <br>As mentioned above, the red light under the USB port on the left is the charging indicator. In addition, the green light below the USB on the right is equivalent to LED3.
+<br>USBポートの下にある赤いライトは、充電中のインジケーターです。また、右側のUSBの下にある緑色のライトは、LED3と同義です。
 </div></html>
 
-Default LEDMAP Setting is LED1 for CapsLock，LED2 for Layer1(fn)，LED3 for Layer2.
-The default LEDMAP settings is as below. If you want to modify it yourself, please see [LEDMAP](en/features/ledmap).
+<!-- Default LEDMAP Setting is LED1 for CapsLock，LED2 for Layer1(fn)，LED3 for Layer2. -->
+デフォルトにLEDMAPに設定されているものは、LED1:Capslock LED2:FNレイヤー LED3:レイヤー2になります。 
+<!-- The default LEDMAP settings is as below. If you want to modify it yourself, please see [LEDMAP](en/features/ledmap). -->
+LEDMAPを変更したい場合は、[LEDMAP](en/features/ledmap) を参照してください。
 
 <table_w30x70>
 
-| Indicator | Default setting |
+<!-- | Indicator | Default setting |
 |:--- |:--- |
 | LED1(default red) | CapsLock |
 | LED2(default yellow or white) | Layer1(It will light up when you press Fn/L1.) |
-| LED3(default green) | Layer2 | 
+| LED3(default green) | Layer2 | -->
+| インジケーター | デフォルト値 |
+|:--- |:--- |
+| LED1(デフォルト 赤) | CapsLock |
+| LED2(デフォルト 黄色 もしくは しろ) | Layer1(FNキー押し込みでレイヤー1に切り替わる時に点灯)) |
+| LED3(デフォルト 緑) | レイヤー2 | 
 
 </table_w30x70>
 
 <div class="attention">
-<subtitle>ATTENTION when in bluetooth mode</subtitle>
+<subtitle>bluetoothモードでの注意事項(ATTENTION when in bluetooth mode)</subtitle>
 
-  - In bluetooth mode，The Num, Caps, and Scroll Lock indicators are not synchronous with the OS status in Bluetooth mode. 
+  <!-- - In bluetooth mode，The Num, Caps, and Scroll Lock indicators are not synchronous with the OS status in Bluetooth mode. 
   - In bluetooth mode, They just toggle on or off when pressed. They are synchronous in USB mode.
   - If one indicator is out of sync, you can use Shift + KEY, such as Shift + Capslock. In this way CapsLock will take effect but its indicator won't change.
-  - Reasonable use of this in bluetooth mode to reverse the indicator light, such as turning off the numlock light when numlock is on and light on when it is off, which can save power.
+  - Reasonable use of this in bluetooth mode to reverse the indicator light, such as turning off the numlock light when numlock is on and light on when it is off, which can save power. -->
+
+  - bluetoothモードでは、Num, Caps, と Scroll Lock インジケーターはOSと同期しません。
+  - bluetoothモードでは、押したときに点灯するだけです。USBモードでは同期します。
+  - インジケーターが同期していない場合は、Shift + キー を使用して、Shift + CapsLockなどを押したとき、CapsLockを有効にします。このように CapsLockが有効になりますが、HHKB上のインジケーターは変化しません。
+  - これらの特性を利用し、インジケーターを反転させることができます。例えば、NumLockがオンの時にNumLockをオフにしたいとき、それをNumLockをオン(Numlockインジケーターがオフ)にした状態で押すことができます。これは電池消費量を少なくすることができます。
 </div>
 
 Besides LEDMAP setting, they have some other special functions.
+LEDMAP設定以外にも、他に特殊な機能があります。
 
 <table_w30x70>
 
