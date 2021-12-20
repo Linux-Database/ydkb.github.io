@@ -89,11 +89,11 @@ bluetoothを有効化したい場合は、[Bluetooth switch & connection status]
 
 <table_w30x70>
 
-| Charging LED status | Meaning |
+<!-- | Charging LED status | Meaning |
 | ---- | ---- |
 | Low brightness or flicker | abnormal(no battery or battery problem) |
 | High brightness | charging |
-| Off or extremely low brightness | the battery is fully charged |
+| Off or extremely low brightness | the battery is fully charged | -->
 
 |  LED状態 | 意味 |
 | ---- | ---- |
@@ -103,31 +103,43 @@ bluetoothを有効化したい場合は、[Bluetooth switch & connection status]
 
 </table_w30x70>
 
-Generally it is no need to pay too much attention to this indicator light. You can know how long it takes to charge after one charge.
+<!-- Generally it is no need to pay too much attention to this indicator light. You can know how long it takes to charge after one charge. -->
+一般的にこれらのインジケーターを気にする必要がありません、基本的に一回の充電をやればだいたいいつ終わるかの時間を知ることができます。
 
-In win10 1809 or later, the battery percentage display is supported. It is not accurate and is for reference only (especially the error displayed during charging will be greater). Every 10% is a level and the highest is 90%. In addition, the percentage is displayed as x1% during charging which is 1% more than when not charging as the following pic shows.
+<!-- In win10 1809 or later, the battery percentage display is supported. It is not accurate and is for reference only (especially the error displayed during charging will be greater). Every 10% is a level and the highest is 90%. In addition, the percentage is displayed as x1% during charging which is 1% more than when not charging as the following pic shows. -->
+Win10 1809 もしくは以降では、バッテリー残量の表示はOSでサポートされています。（正確な数値ではありません、充電中に表示されるものはより誤差が大きくなります。）10%ごとに一区間となり、最高は90%です。充電中の時はx1%として表示されます（バッテリーではx0%）。
 
 <div style="width: 450px">
 
 ![](/assets/hhkb-ble-charge.png?450)
 </div>  
 
-When fully charged, the charging indicator will go off or the brightness will be extremely low.
+<!-- When fully charged, the charging indicator will go off or the brightness will be extremely low. -->
+満充電時には、インジケーターが消えるか、輝度が極めて低い状態になります。
 
-Mac has blocked the battery service of third-party Bluetooth devices. Thus we can use **Output Battery Percetage as Text** function (default hotkey for HHKB BLE is Fn+E) if we want to know the battery level:__[[ble-series: blebattery | Charge & Battery Information]]__
+<!-- Mac has blocked the battery service of third-party Bluetooth devices. Thus we can use **Output Battery Percetage as Text** function (default hotkey for HHKB BLE is Fn+E) if we want to know the battery level:__[[ble-series: blebattery | Charge & Battery Information]]__ -->
+Macでは、サードパティBluetoothデバイスのバッテリーサービスをブロックしています。そのため、バッテリー残量を知りたい場合は、**バッテリー状態をテキスト出力** を使用します（HHKB BLEのデフォルトのホットキーはFn+E）:__[[ble-series: blebattery | Charge & Battery Information]]__
 
 
-## Edit Keymap and Reflash Firmware
+## キーマップの変更やファームウェアの更新 (Edit Keymap and Reflash Firmware)
 
-Open the website https://ydkb.io, select the keyboard **HHKB BLE**, and then there is its flashing method on the page [Mass Storage Device Bootloader (U Disk Mode)] (bootloader/msd-bootloader). Refer to other parts of this document for the description of the key editor.
+<!-- Open the website https://ydkb.io, select the keyboard **HHKB BLE**, and then there is its flashing method on the page [Mass Storage Device Bootloader (U Disk Mode)] (bootloader/msd-bootloader). Refer to other parts of this document for the description of the key editor. -->
+https://ydkb.io/ を開き、左のメニュから **HHKB BLE もしく (HHKB BLE S)** を選択し、そのページでは、[Mass Storage Device Bootloader (U Disk Mode)] (bootloader/msd-bootloader) にあるフラッシュ方法を参照してください。このドキュメントの他の部分については、key editorセクションを参照してください。
 
-In addition to pressing the upper left key (usually ESC) to insert the cable to enter the flashing mode, you can also use the <kbd>Reset</kbd> in **LEDs and Functions**, in order to prevent accidental pressing, you need to hold down the < kbd>LCtrl</kbd>, and then press this <kbd>Reset</kbd>, you can jump directly to the flashing mode without unplugging and replugging.
+
+<!-- In addition to pressing the upper left key (usually ESC) to insert the cable to enter the flashing mode, you can also use the <kbd>Reset</kbd> in **LEDs and Functions**, in order to prevent accidental pressing, you need to hold down the < kbd>LCtrl</kbd>, and then press this <kbd>Reset</kbd>, you can jump directly to the flashing mode without unplugging and replugging. -->
+一番左上のキー（ESC）を押したまま、ケーブルを挿入することでフラッシュモードに入ります。また、LEDs and Functionsの<kbd>Reset</kbd>を使用することで、誤作動を防ぐために、<kbd>LCtrl</kbd>を押している間にこの<kbd>Reset</kbd>を押すことで、フラッシュモードに移行することができます。
+
 
 <html><div class="attention">
-<subtitle>ATTENTION</subtitle>
-<ul><li>In addition to the choice of <b>HHKB BLE</b> for the keyboard, you can also use <b>HHKB BLE S</b>. </li>
-<li>This firmware with S has a faster response speed, and it is temporarily unable to guarantee compatibility with all HHKBs. Most of them should be fine. </li>
-<li>If your keyboard has no compatibility issues, it is strongly recommended to choose the firmware of <b>HHKB BLE S</b>. </li><ul>
+<subtitle>注意(ATTENTION)</subtitle>
+<!-- <ul><li>In addition to the choice of <b>HHKB BLE</b> for the keyboard, you can also use <b>HHKB BLE S</b>. </li> -->
+<ul><li>キーマップの選択は <b>HHKB BLE</b> か,  <b>HHKB BLE S</b> でも使用可能です。 </li>
+
+<!-- <li>This firmware with S has a faster response speed, and it is temporarily unable to guarantee compatibility with all HHKBs. Most of them should be fine. </li> -->
+<li>Sバージョンでの応答速度はより高速になっていますが、現在では全HHKBモデルへの互換性を確認できてないですが、基本的に問題にはなりません</li>
+<!-- <li>If your keyboard has no compatibility issues, it is strongly recommended to choose the firmware of <b>HHKB BLE S</b>. </li><ul> -->
+<li>お持ちのHHKBで互換性の問題がなければ、 <b>HHKB BLE S</b>への利用をお勧めします。 </li><ul>
 </div></html>
 
 
