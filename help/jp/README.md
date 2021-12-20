@@ -4,6 +4,7 @@ Currently some documentations for English are missing. You can use online transl
 <html><div class="hint"> 
 <subtitle>HINT</subtitle>
 
+  - あああああああ
   - Please use Chrome or Chromium kernel browser access to ensure the best compatibility.
   - This document may have some lack of rigor and uniformity, please forgive me.
 </div></html>

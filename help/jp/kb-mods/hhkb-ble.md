@@ -14,27 +14,36 @@
 
 For sale：https://item.taobao.com/item.htm?id=590221409485  
 
-For installation, please refer to the product introduction on Taobao above.
+<!-- For installation, please refer to the product introduction on Taobao above. -->
+インストール方法については、Taobaoの製品説明を参照してください。
   
-If you knew about Hasu's HHKB Mod, it is easy to understand this one. Simple to say, it is an  power-saving optimized version. The power saving of hardware comes from two ways. One is that the Bluetooth uses a ble module, and the other is that the working voltage needs only 3.3v no 5v. The power saving of software comes from the power saving strategy formulated according to the characteristics of the hardware. Taken together, the battery life may be 6 to 10 times improve from Hasu version. But the biggest hero is still him (the entire HHKB keyboard part of the scanning works), I just stand on the achievements of predecessors and improve the product.
+<!-- If you knew about Hasu's HHKB Mod, it is easy to understand this one. Simple to say, it is an  power-saving optimized version. The power saving of hardware comes from two ways. One is that the Bluetooth uses a ble module, and the other is that the working voltage needs only 3.3v no 5v. The power saving of software comes from the power saving strategy formulated according to the characteristics of the hardware. Taken together, the battery life may be 6 to 10 times improve from Hasu version. But the biggest hero is still him (the entire HHKB keyboard part of the scanning works), I just stand on the achievements of predecessors and improve the product. -->
+hasuコントローラに詳しい人にとって、あんまり紹介いらないと思います。簡単的に言えば、電力消費を抑えたバージョンになります、抑えられた原因として二つあり、一つ目はbluetoothモジュールはbleになり、もう一つは電源供給は5vを必要としてなくなり、3.5vから5vへのコンバーター必要なくなりました。バッテリーのソフトウェア管理部分も、ハードウェアの特性から設計されており。ソフトウェアとハードウェアの組み合わせにより、使用可能の時間が6から10倍増えます。しかし、最も大きな英雄は、やはりhasuコントローラのキーボード部分のスキャン構造である、自身はhasuコントローラのデザインを基づいて、製品を改善したものです。
 
-Most information, please refer to the BLE Series Part. Here we mainly talk about some special features of HHKB BLE Mod.
+<!-- Most information, please refer to the BLE Series Part. Here we mainly talk about some special features of HHKB BLE Mod. -->
+BLEモジュールについて、前helpページののBLE Seriesを参照してください、ここではHHKB BLE Modについて一部特徴を話します。
 
-Note: This section is for the latest firmware of ydkb.io.
+<!-- Note: This section is for the latest firmware of ydkb.io. -->
+メモ：このページ内容の対象は最新版ファームウェアになります。
 
-The firmware changelog can be found at: [HHKB BLE firmware changelog ](changelog/hhkb_ble)
-
-
-## Bluetooth Pairing
-
-In short, there is no need to enable pairing mode. When Bluetooth is unconnected and discoverable, you can pair it. Mainly refer to this section: [BLE Series](/en/ble-series)
-
-If you have any problem, use this instruction to do troubleshooting: [BLE troubleshooting](/en/ble-series/troubleshooting)
+<!-- The firmware changelog can be found at: [HHKB BLE firmware changelog ](changelog/hhkb_ble) -->
+ファームウェアの変更履歴はこちらを参照してください。[HHKB BLE firmware changelog ](changelog/hhkb_ble)
 
 
-## Hardware Switch of HHKB BLE
+## Bluetooth ペアリング方法 (Bluetooth Pairing)
+
+<!-- In short, there is no need to enable pairing mode. When Bluetooth is unconnected and discoverable, you can pair it. Mainly refer to this section: [BLE Series](/en/ble-series) -->
+
+端的に言いますと、ペアリングモードを有効化にする必要はありません。Bluetoothが接続されていない状態で、可視状態になっているときにペアリングすることができます。このセクションを参照してください。[BLE Series](/en/ble-series)
+
+<!-- If you have any problem, use ・ instruction to do troubleshooting: [BLE troubleshooting](/en/ble-series/troubleshooting) -->
+もし接続に問題がある場合、この文章を参照し、トラブルシューティングしてください[BLE troubleshooting](/en/ble-series/troubleshooting)
+
+
+## HHKB BLE用物理スイッチ (Hardware Switch of HHKB BLE)
 
 There is a physical switch behind the dip switch cover. This is the only switch on the controller. 
+
 
 <html><div class="attention"> 
 <subtitle>ATTENTION:</subtitle>
