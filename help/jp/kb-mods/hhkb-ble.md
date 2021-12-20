@@ -42,38 +42,46 @@ BLEモジュールについて、前helpページののBLE Seriesを参照して
 
 ## HHKB BLE用物理スイッチ (Hardware Switch of HHKB BLE)
 
-There is a physical switch behind the dip switch cover. This is the only switch on the controller. 
-
+<!-- There is a physical switch behind the dip switch cover. This is the only switch on the controller.  -->
+純正のdipスイッチ部分のところに、ON/OFFスイッチに変更しました、これは、このコントローラにある唯一の物理スイッチです。
 
 <html><div class="attention"> 
-<subtitle>ATTENTION:</subtitle>
-<ul><li>This switch's function is to turn on/off the battery power supply, not Bluetooth.</li>
-<li>Thus when this switch is turned off, if you plug in the USB cable, Bluetooth can still work as in this case USB is the power source.</li></ul>
+<subtitle>注意(ATTENTION):</subtitle>
+<!-- <ul><li>This switch's function is to turn on/off the battery power supply, not Bluetooth.</li> -->
+<ul><li>このスイッチはバッテリーへの電源供給を切り替えるだけのものになります、bluetoothモジュールへの給電はスイッチングしません。</li>
+<!-- <li>Thus when this switch is turned off, if you plug in the USB cable, Bluetooth can still work as in this case USB is the power source.</li> -->
+</ul><li>このため、USB接続中でスイッチoffであっても、bluetoothモジュールへの給電は続いてるため、bluetootの使用は可能になります。</li></ul>
 </div></html>
 
-The switch can be easily dialed by using the cover directly, close to the USB port (left in the figure below) is open, and away from the USB port (right in the figure below) is closed. When the keyboard is working abnormally, it is also necessary to turn off the switch and then turn it on again to restart the keyboard.
+<!-- The switch can be easily dialed by using the cover directly, close to the USB port (left in the figure below) is open, and away from the USB port (right in the figure below) is closed. When the keyboard is working abnormally, it is also necessary to turn off the switch and then turn it on again to restart the keyboard. -->
+このスイッチは元のdipスイッチのフタで棒などを利用しなくても切り替えることができます、USBポート(左側)に近いときはオンて、USBポート(右側)に遠いときはオフになります。キーボードが異常動作している場合、スイッチをオフにしてからオンにすることで再起動になります。
 
 <div style="width: 600px">
 
 ![](/assets/hhkb_ble_sw.jpg?600)
 </div>
 
-If you want to turn off Bluetooth, refer to [Bluetooth switch & connection status](/en/ble-series/connection-status)
+<!-- If you want to turn off Bluetooth, refer to [Bluetooth switch & connection status](/en/ble-series/connection-status) -->
+bluetoothを有効化したい場合は、[Bluetooth switch & connection status](/en/ble-series/connection-status)を参照してください。
 
 <html><div class="hint">
 <subtitle>HINT</subtitle>
-<ul><li>this software switch is designed to turn off **Bluetooth FUNCTION** completely for people who only or temporarily only use USB. It is recommended to turn off the physical power switch While this switch is off.</li>
-<li>It is not designed for turning off Bluetooth daily to save energy as HHKB BLE consumes much more power when standby by using this function than Lock Mode.</li></ul>
+<!-- <ul><li>this software switch is designed to turn off **Bluetooth FUNCTION** completely for people who only or temporarily only use USB. It is recommended to turn off the physical power switch While this switch is off.</li> -->
+<ul><li>上記ページのソフトウェアのbluetothスイッチは、一時的・もしくはUSBだけ使用する人向けのものになります。そうであればハードウェアスイッチもオフにしてください。</li>
+<!-- <li>It is not designed for turning off Bluetooth daily to save energy as HHKB BLE consumes much more power when standby by using this function than Lock Mode.</li></ul> -->
+<li>ソフトウェアのbluetootスイッチは、日常使用でバッテリー節約のためのものではありません、HHKB BLEでは、これらを使用しオフにした場合、エコモードレベル2よりもバッテリーを消費します。</li></ul>
 </div></html>
 
 
-## Battery Charging
+## バッテリ充電 (Battery Charging)
 
-The charging port and data port are both the small USB port on HHKB, not two large USB female ports.
+<!-- The charging port and data port are both the small USB port on HHKB, not two large USB female ports. -->
+充電と通信可能のポートは小さい方の1ポートだけになります(mini USB or USB-C)、大きい方のUSB2.0 Type-Aではありません。
 
 <html><div class="attention">
-<subtitle>It is recommended to use the PC's USB port or 5v charger to charge.</subtitle>
-<br>Improper charging(like more than 6v) may broke the charging IC. Using a high-power charger will not increase the charging speed as the default charging current is limited to about 450mA. 
+<!-- <subtitle>It is recommended to use the PC's USB port or 5v charger to charge.</subtitle> -->
+<subtitle>PCからのUSBポートもしくは5vのUSB充電器を推奨されています。</subtitle>
+<br>Improper charging(like more than 6v) may broke the charging IC. Using a high-power charger will not increase the charging speed as the default charging current is limited to about 450mA.<br>高電力の充電器を使用しても、充電速度が上がりません。充電速度はデフォルトで450mAに制限されています。USBから電力供給はクリアの状態で,2500mAHの電池はおよそ6時間で満充電できます。高速充電器やサポートしない充電器を使用する場合、高電圧によって内臓充電ICを壊す可能性があります。
 </div></html>
 
 The charging indicator is a red led below the left USB HUB port(if hardware version is more than v2.5, it is a blue led). You can see it from the back. It has three states:
