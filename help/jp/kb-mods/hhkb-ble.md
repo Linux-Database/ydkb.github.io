@@ -84,7 +84,8 @@ bluetoothを有効化したい場合は、[Bluetooth switch & connection status]
 <br>Improper charging(like more than 6v) may broke the charging IC. Using a high-power charger will not increase the charging speed as the default charging current is limited to about 450mA.<br>高電力の充電器を使用しても、充電速度が上がりません。充電速度はデフォルトで450mAに制限されています。USBから電力供給はクリアの状態で,2500mAHの電池はおよそ6時間で満充電できます。高速充電器やサポートしない充電器を使用する場合、高電圧によって内臓充電ICを壊す可能性があります。
 </div></html>
 
-The charging indicator is a red led below the left USB HUB port(if hardware version is more than v2.5, it is a blue led). You can see it from the back. It has three states:
+<!-- The charging indicator is a red led below the left USB HUB port(if hardware version is more than v2.5, it is a blue led). You can see it from the back. It has three states: -->
+充電のインジケーターランプは左側のUSB HUBポートの下にあります。（基板がv2.5以上の場合は、青色と赤色のLEDになります。）ポートから覗くことで見ることができます。3つの状態があります:
 
 <table_w30x70>
 
@@ -93,6 +94,12 @@ The charging indicator is a red led below the left USB HUB port(if hardware vers
 | Low brightness or flicker | abnormal(no battery or battery problem) |
 | High brightness | charging |
 | Off or extremely low brightness | the battery is fully charged |
+
+|  LED状態 | 意味 |
+| ---- | ---- |
+| 低輝度 もしく 点滅 | 異常 (バッテリー切れか電池異常) |
+| 高輝度 | 充電中 |
+| 光らない もしく 極めて低輝度 | 満充電 |
 
 </table_w30x70>
 
